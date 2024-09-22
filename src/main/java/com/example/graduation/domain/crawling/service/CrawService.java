@@ -60,6 +60,7 @@ public class CrawService {
                 }
                 for (WebElement element : elements2) {
                     trends2.add(element.getText());
+                    System.out.println(element.getText());
                 }
                 // 다음 페이지 화살표 클릭 (페이지 넘기기)
                 WebElement nextButton = driver.findElement(By.xpath("//div[contains(@class,'pYTkkf') and contains(@class,'Bz112c') and contains(@class,'RLmnJb')]"));
